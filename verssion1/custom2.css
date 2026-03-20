@@ -1,0 +1,193 @@
+/* Vos customisations des classes de Bootstrap */
+
+:root {
+  font-size: 1em;
+  --back-color: #777;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  /* background-color: black;*/
+}
+
+main h3 {
+  color: white;
+  text-align: center;
+}
+p {
+  color: rgb(207, 199, 199);
+  text-align: center;
+  span {
+    color: white;
+  }
+}
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: rgb(224, 115, 75);
+  border: 1px solid rgb(224, 115, 75);
+  border-radius: 5px;
+}
+
+h2 {
+  color: rgb(224, 115, 75);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(224, 115, 75);
+}
+
+button {
+  background-color: #ded3d3;
+  padding: 2px 10px;
+  border: 1px solid #af9c9c;
+  border-radius: 0;
+  color: rgb(224, 115, 75);
+}
+
+hr {
+  border: 1px solid orangered;
+  width: 110px;
+}
+
+section {
+  padding: 32px 64px;
+}
+
+.boite {
+  width: 100%;
+  height: 25px;
+  background-color: black;
+}
+
+.container1 {
+  width: 100%;
+  background-image: url("images/hero-image.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.code {
+  display: block;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+.boite2 .who-weare{
+  padding: 20px;
+}
+
+.boite2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+
+  &.image {
+    display: block;
+    width: 60px;
+  }
+
+  p {
+    color: black;
+    text-align: center;
+
+    span {
+      color: rgb(224, 115, 75);
+    }
+  }
+}
+
+.col {
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.boite3 {
+  background-color: rgb(224, 214, 214);
+}
+
+/* Responsive Styling */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: orangered;
+  .img-header {
+    display: block;
+    padding: 120px 10px 25px;
+  }
+}
+
+.img {
+  display: block;
+  margin: 10px auto;
+}
+@media (min-width: 1199px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col article{
+    padding: 40px;
+  }
+  .col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*
+@media (max-width: 991px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+  }
+}
+*/
